@@ -14,7 +14,7 @@ jobs:
       matrix:
         os: [ubuntu-latest]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: cachix/install-nix-action@v26
       - name: Setup Cachix
         uses: cachix/cachix-action@v14
@@ -67,7 +67,7 @@ jobs:
           - solana-full
           - saber-devenv
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: cachix/install-nix-action@v26
       - name: Setup Cachix
         uses: cachix/cachix-action@v14
@@ -89,7 +89,7 @@ jobs:
   #         - solana-1_11-full
   #         - solana-1_13-full
   #   steps:
-  #     - uses: actions/checkout@v3
+  #     - uses: actions/checkout@v4
   #     - uses: cachix/install-nix-action@v26
   #     - name: Setup Cachix
   #       uses: cachix/cachix-action@v14
